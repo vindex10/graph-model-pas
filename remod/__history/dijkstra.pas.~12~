@@ -1,0 +1,19 @@
+unit dijkstra;
+
+interface
+  uses
+    graphLib, Messages;
+  type
+    Tplength=array of longword;
+    TpathTo=array of array of longword;
+    TDijkstra=record
+      pathLength:Tplength;
+      pathTo:TpathTo;
+    end;
+  function calcDijkstra(graph:graphNet; d:graphDot):TDijkstra;
+implementation
+  function calcDijkstra(graph:graphNet; d:graphDot):TDijkstra;
+  begin
+
+  end;
+end.
